@@ -1,8 +1,9 @@
 # Przydatne Narzedzia
 Narzędzia przydatne podczas testów bezpieczeństwa
 
-## Testy bezpieczeństwa środowiska
-### SSH Audit
+# Testy bezpieczeństwa środowiska
+
+## SSH Audit
 
 #### Opis
 Program umożliwia wykonanie testu poprawności konfiguracji komunikacji szyfrowanej dla protokołów SSH1 i SSH2. Narzędzie rozpoznaje oprogramowanie, jego wersję, wykrywa stosowanie kompresji. 
@@ -30,7 +31,7 @@ Narzędzie rekomenduje wyłączenie algorytmów ecdh-sha2-nistp521, ecdh-sha2-ni
 #### Rekomedacje dotyczące konfiguracji SSH:
 https://tools.ietf.org/id/draft-ietf-curdle-ssh-kex-sha2-09.html
 
-### Nmap
+## Nmap
 
 #### Opis
 
@@ -52,3 +53,9 @@ Weryfikacja występowania błędu Heartbleed (błąd bezpieczeństwa w popularne
 nmap -d --script ssl-heartbleed --script-args vulns.showall -sV <host>
 nmap -p 443 --script ssl-heartbleed <host>
 ```
+
+## Rekomendacje
+
+#### Długość kluczy kryptograficznych
+
+https://www.keylength.com/en/compare/
